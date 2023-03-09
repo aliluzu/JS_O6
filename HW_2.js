@@ -5,13 +5,13 @@ then - 'denied'
 */
 
 
-let vacationMonth = prompt("Enter the month")
+// let vacationMonth = prompt("Enter the month")
 
-if (vacationMonth === "July" || vacationMonth === "August"){
-    alert("Your vacation is Approved");
-}else{
-    alert("Your vacation is Denied")
-}
+// if (vacationMonth === "July" || vacationMonth === "August"){
+//     alert("Your vacation is Approved");
+// }else{
+//     alert("Your vacation is Denied")
+// }
 
 /*
 1.2 Write a simple calculator (*, /, +, -). Check your code for exception coverage for arithmetic operations.
@@ -19,28 +19,28 @@ if (vacationMonth === "July" || vacationMonth === "August"){
 You should have two variables for the original numbers and one for the operator. Depending on the operator, 
 one or another arithmetic operation should take place and the result should be displayed on the console.
 */
-let mathOpe =  prompt("Choose the follow operator: '+', '-', '*', '/', ")
-let numebr1 = Number(prompt("Enter 1st number"));
-let number2 = Number(prompt("Enter 2nd number"));
+// let mathOpe =  prompt("Choose the follow operator: '+', '-', '*', '/', ")
+// let numebr1 = Number(prompt("Enter 1st number"));
+// let number2 = Number(prompt("Enter 2nd number"));
 
 
-if(mathOpe === '+'){
-    result = numebr1 + number2
-    alert(`${result}`);
-}else if(mathOpe === "-"){
-    result = numebr1 - number2
-    alert(`${result}`);
-}else if(mathOpe === '*'){
-    result = numebr1 * number2
-    alert(`${result}`);
-}else if(mathOpe === '/' && number2 != 0){
-    result = numebr1 / number2
-    alert(` ${result}`);
-}else if(mathOpe === '/' && number2 == 0){
-    alert("cannot divide by zero")
-}else{
-    alert("Invalid operator")
-}
+// if(mathOpe === '+'){
+//     result = numebr1 + number2
+//     alert(`${result}`);
+// }else if(mathOpe === "-"){
+//     result = numebr1 - number2
+//     alert(`${result}`);
+// }else if(mathOpe === '*'){
+//     result = numebr1 * number2
+//     alert(`${result}`);
+// }else if(mathOpe === '/' && number2 != 0){
+//     result = numebr1 / number2
+//     alert(` ${result}`);
+// }else if(mathOpe === '/' && number2 == 0){
+//     alert("cannot divide by zero")
+// }else{
+//     alert("Invalid operator")
+// }
 
 /**
  
@@ -49,10 +49,49 @@ if(mathOpe === '+'){
  За сколько дней она доползёт до вершины стены.»
  */
 
- let h = 5;
- let day = 3;
- let nigth = 2
+//  let h = 5;
+//  let day = 3;
+//  let nigth = 2
 
- let x = day - nigth;
- let day_left  = h - x;
- alert(`${day_left} days left to reach the top `);
+//  let x = day - nigth;
+//  let day_left  = h - x;
+//  alert(`${day_left} days left to reach the top `);
+
+//  *********** Another way *********
+
+let dayDistance = 3
+let nigthDown = -2
+let distance = 0
+let days = 0
+let wall = 5
+
+// 1
+if ((distance += dayDistance) <= wall){
+    days++
+    console.log(`Current distance at the end of the day for day ${days} is ${distance} meter(s)`)
+    distance += nigthDown
+}
+
+// 2
+
+if ((distance += dayDistance) <= wall) {
+    days++
+    console.log (`Current distance at the end of the day for day ${days} is ${distance} meter(s)`)
+    distance += nigthDown
+}
+
+// 3
+
+if ((distance += dayDistance) <= wall) {
+    days++
+    console.log (`Current distance at the end of the day for day ${days} is ${distance} meter(s)`)
+    distance += nigthDown
+}
+
+//4
+
+if ((distance += dayDistance) <= wall) {
+    days++
+    console.log (`Current distance at the end of the day for day ${days} is ${distance} meter(s)`)
+    distance += nigthDown
+}
