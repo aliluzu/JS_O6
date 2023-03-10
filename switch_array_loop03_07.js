@@ -25,6 +25,7 @@ if (login == true) {
 
 // ================= SWITCH ================
 
+/*
 let day = 3;
 switch(day){
     case 2:
@@ -47,3 +48,138 @@ switch(day){
     default:
         console.log("Another day")
 }
+*/
+
+// ================= STRING ================
+
+/*
+let phrase = "Hello world!"
+let space = " ";
+
+// phrase.length
+
+console.log(phrase.length)
+console.log(space.length)
+*/
+
+/*
+// index;
+
+let phrase = "Hello world!"
+let space = "  .9%";
+
+console.log(phrase[11])
+console.log(space[0])
+console.log(phrase[7])
+console.log(phrase[0])
+
+console.log(phrase.toLowerCase())
+console.log(phrase.toUpperCase())
+
+*/
+
+// ================= Arrays ================
+
+/*
+let arr = [];
+console.log(typeof arr);
+
+const arr1 = ['a', 'b'];
+console.log(arr1);
+
+let arr2 = ['ok', 'pine', 'oak', 'aspeon']
+console.log(arr2);
+
+let arr3 = [1, 2, 3, 4]
+console.log(arr3);
+
+
+// variables
+
+let five = 5
+let six =6
+let seven = "seven"
+
+const diffTypes = [null, 2, true, undefined, five, [1,2,3], arr3];
+console.log(diffTypes);
+*/
+
+
+// arr[index]; // indesx starts from 0
+//arr[arr.length - 1]; // accepts zero and positive index
+// arr.at(index)    // accepts negative index
+
+
+/*
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+// index:         0     1   2    3     4   5    6
+// or                                 -3  -2   -1
+
+console.log(letters.length); //7
+console.log(letters[0]); //a 
+console.log(letters[letters.length - 1]); //g
+console.log(letters.at(-2)); //2
+*/
+
+// ======== for loop ==============
+
+// for (let i = 0; i < 3; i++){
+//     console.log(i)
+// }
+
+// ********* repeat string *******
+
+/*
+let str1 = "Hello"
+let newStr = "";
+for(let i = 0; i < 7; i ++){
+    newStr += str1
+    console.log(newStr)
+}
+
+
+let str2 = "test"
+let newStr1 = "";
+for(let i = 0; i < 7; i ++){
+
+    console.log(str2 + i)
+}
+// console.log(newStr)
+*/
+
+// ********* find sum *******
+
+/*
+console.log('Sum every numbers')
+let sum = 0;
+for (let i =1; i <= 10; i++){
+    sum +=i;
+    console.log(sum)
+}
+
+console.log('')
+console.log('Sum')
+let sum1 = 0;
+for (let i =1; i <= 10; i++){
+    sum1 +=i;
+}
+console.log(sum1)
+*/
+
+// --------------------exponentiate---------
+
+// let num = 5
+// let result = 1
+// for(let i = 1; i <= 3; i++){
+//     result = result * num;
+//     console.log(result)
+// }
+
+let str = "Hello!"
+let result1
+for(let i = 1; i <= str.length; i+=2){
+    result1 = i
+    console.log(result1)
+}
+
+// --------------------change string---------
