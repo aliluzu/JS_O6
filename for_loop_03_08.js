@@ -20,7 +20,8 @@ for(i = 0; i < arr.length ; i++ ){
 // ------------------ Example 2 --------
 
 /*
-let count = 0; // != 0 if you will multiple
+let arr = ["a", "hello", 5, -10, "0", true, "_", false, 8, 9, ["hi", true, 8, "="]];
+let count = 0; // != 0 if you will multiply
 
 for(i = 0; i < arr.length ; i++ ){
 
@@ -37,7 +38,9 @@ console.log(count)
 */
 
 // ------------------ Example 3 -------- sum of all numbers 
-/*
+
+
+let arr = ["a", "hello", 5, -10, "0", true, "_", false, 8, 9, ["hi", true, 8, "="]];
 let count = 0; 
 let sum = 0;
 
@@ -52,7 +55,7 @@ for(i = 0; i < arr.length ; i++ ){
     }
    
 }
-*/
+
 
 // ------------------ Example 4 -------- find an even element
 /*
@@ -84,6 +87,7 @@ console.log(str)
 
 // ------------------ Example 6 -------- 
 
+/*
 let arr2 = ["agaga", "hello", 5, -10,"hi", true, "buy", false, 8, 9, ["hi", true, 8, "="]];
 let str = " ";
 
@@ -92,3 +96,4 @@ for(i = 0; i < arr2.length; i++){
     console.log(arr2[i].length)
 }
 console.log(str)
+*/
