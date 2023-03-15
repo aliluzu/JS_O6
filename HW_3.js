@@ -185,6 +185,7 @@ console.log(pattern);
 
 
 let rows = 5;
+
 let starsUpper = "*"
 let starsLow = "*"
 
@@ -213,7 +214,7 @@ for (let n = 1; n <= rows; n++) {  //print rows
      pattern += " ";
   }
 
-  for (let num = 1; num <= 2 * n - 1; num++) { // print columns 
+  for (let column = 1; column <= 2 * n - 1; column++) { // print columns 
      pattern += starsUpper;
      
   }
@@ -221,15 +222,13 @@ for (let n = 1; n <= rows; n++) {  //print rows
 }
 
 for(let n = 1; n <= rows; n++){
-//   for (let space = 1; space <= rows - n; space++) {
-//     pattern += " ";
-//  }
-  for(let num = 1; num <= 6-n ; num++){
-    pattern += starsLow
-  }
-  for (let space = 1; space <= rows - n; space++) {
+  for (let space = 1; space <= n; space++) {
     pattern += " ";
  }
+  for(let column = 1; column <= 2 * (rows-n)-1; column++){
+    pattern += starsLow
+  }
+ 
   pattern += "\n"
 }
 console.log(pattern)
