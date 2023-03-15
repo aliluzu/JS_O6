@@ -108,6 +108,8 @@ if(counter == 0) {
 //  *********
 /*
 */
+
+/*
 let rows = 5;
 
 // pattern variable carries the final pattern in string format
@@ -129,3 +131,102 @@ for (let n = 1; n <= rows; n++) {  //print rows
    pattern += "\n";
 }
 console.log(pattern);
+*/
+
+// 5. Draw a Christmas tree and a rhombus using cycles
+
+// let rows = 13;
+// let pattern = "";
+
+// for (let r = 1; r <= rows; r++) {  //print rows
+//    for (let space = 1; space <= rows - r; space++) {
+//       pattern += " ";
+//    }
+//    for (let c = 1; c <= 2 * r - 1; c++) { // print columns 
+//       pattern += "*";
+      
+//    }
+
+//    pattern += "\n";
+// }
+// console.log(pattern);
+
+// let rows = 5;
+
+// let pattern = "";
+
+// let stars = "*";
+
+// for(let r = 1; r<= rows; r++){
+//     for(let space = 1; space <= rows + r; space ++){
+//         pattern += " ";
+//     }
+//     for(let c = 1; c <= 6 - r; c++){
+//         pattern += stars
+//     }
+//     pattern += "\n"
+// }
+// console.log(pattern)
+
+
+// let rows = 5;
+// let pattern = "";
+
+// for (let n = 1; n <= rows; n++) {  //print rows
+//    for (let space = 1; space <= rows + n; space++) {
+//       pattern += " ";
+//    }
+//    for (let num = 1; num <= 6-n; num++) { // print columns 
+//       pattern += "*";
+//    }
+//    pattern += "\n";
+// }
+// console.log(pattern);
+
+
+let rows = 5;
+let starsUpper = "*"
+let starsLow = "*"
+
+let pattern = ""
+
+// for(let n  = 1; n <= rows; n++){
+//   for(let space = 1; space <= rows; space++){
+//     pattern += " ";
+//   }
+//   for(let num = 1; num <= n; num++){
+//     pattern += starsUpper
+//   }
+//   pattern += "\n"
+// }
+
+// for(let n = 1; n <= rows; n++){
+//   for(let num = 1; num <= 6-n; num++){
+//     pattern += starsLow
+//   }
+//   pattern += "\n"
+// }
+// console.log(pattern)
+
+for (let n = 1; n <= rows; n++) {  //print rows
+  for (let space = 1; space <= rows - n; space++) {
+     pattern += " ";
+  }
+
+  for (let num = 1; num <= 2 * n - 1; num++) { // print columns 
+     pattern += starsUpper;
+     
+  }
+  pattern += "\n";
+}
+
+for(let n = 1; n <= rows; n++){
+  for (let space = 1; space <= rows - n; space++) {
+    pattern += " ";
+ }
+  for(let num = 1; num <= 6-n; num++){
+    pattern += starsLow
+  }
+  pattern += "\n"
+}
+console.log(pattern)
