@@ -191,15 +191,25 @@ console.log(pattern)
 // мы знаем, что оно означает “You are the best QA ever”.
 // Нам нужно придумать программу дешифратор.
 
+let message = "Ybrobrubr brabrrbrebr brtbrhbrebr brbbrebrsbrtbr brQbrAbr brebrvbrebrrbr";
+let response = message.replace(/br/g, "")
+console.log(response)
 
 //7. Придумайте свой собственный шифр, а также программу, 
 // которая будет шифровать и затем дешифровщик к нему
 
+// coder
+/*
 let message = "Hey! It's challenge yourself"
 let keyword = "hidden"
 let encrypt = " ";
 
 for(let i = 0; i < message.length; i++){
+  // console.log(message[i])
   encrypt += message[i] + keyword
+  
 }
 console.log(encrypt)
+*/
+
+// decoder
