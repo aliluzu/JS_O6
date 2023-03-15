@@ -135,56 +135,8 @@ console.log(pattern);
 
 // 5. Draw a Christmas tree and a rhombus using cycles
 
-// let rows = 13;
-// let pattern = "";
 
-// for (let r = 1; r <= rows; r++) {  //print rows
-//    for (let space = 1; space <= rows - r; space++) {
-//       pattern += " ";
-//    }
-//    for (let c = 1; c <= 2 * r - 1; c++) { // print columns 
-//       pattern += "*";
-      
-//    }
-
-//    pattern += "\n";
-// }
-// console.log(pattern);
-
-// let rows = 5;
-
-// let pattern = "";
-
-// let stars = "*";
-
-// for(let r = 1; r<= rows; r++){
-//     for(let space = 1; space <= rows + r; space ++){
-//         pattern += " ";
-//     }
-//     for(let c = 1; c <= 6 - r; c++){
-//         pattern += stars
-//     }
-//     pattern += "\n"
-// }
-// console.log(pattern)
-
-
-// let rows = 5;
-// let pattern = "";
-
-// for (let n = 1; n <= rows; n++) {  //print rows
-//    for (let space = 1; space <= rows + n; space++) {
-//       pattern += " ";
-//    }
-//    for (let num = 1; num <= 6-n; num++) { // print columns 
-//       pattern += "*";
-//    }
-//    pattern += "\n";
-// }
-// console.log(pattern);
-
-
-let rows = 5;
+let rows = 13;
 
 let starsUpper = "*"
 let starsLow = "*"
@@ -208,13 +160,13 @@ let pattern = ""
 //   pattern += "\n"
 // }
 // console.log(pattern)
-
+/*
 for (let n = 1; n <= rows; n++) {  //print rows
   for (let space = 1; space <= rows - n; space++) {
      pattern += " ";
   }
 
-  for (let column = 1; column <= 2 * n - 1; column++) { // print columns 
+  for (let num = 1; num <= 2 * n - 1; num++) { // print columns 
      pattern += starsUpper;
      
   }
@@ -225,10 +177,39 @@ for(let n = 1; n <= rows; n++){
   for (let space = 1; space <= n; space++) {
     pattern += " ";
  }
-  for(let column = 1; column <= 2 * (rows-n)-1; column++){
+  for(let column = 0; column < 2 * (rows-n)-1; column++){
     pattern += starsLow
   }
  
   pattern += "\n"
 }
 console.log(pattern)
+
+*/
+// 6.Имеется зашифрованное предложение 
+// “Ybrobrubr brabrrbrebr brtbrhbrebr brbbrebrsbrtbr brQbrAbr brebrvbrebrrbr”
+// мы знаем, что оно означает “You are the best QA ever”.
+// Нам нужно придумать программу дешифратор.
+
+let message = "Ybrobrubr brabrrbrebr brtbrhbrebr brbbrebrsbrtbr brQbrAbr brebrvbrebrrbr";
+let response = message.replace(/br/g, "")
+console.log(response)
+
+//7. Придумайте свой собственный шифр, а также программу, 
+// которая будет шифровать и затем дешифровщик к нему
+
+// coder
+/*
+let message = "Hey! It's challenge yourself"
+let keyword = "hidden"
+let encrypt = " ";
+
+for(let i = 0; i < message.length; i++){
+  // console.log(message[i])
+  encrypt += message[i] + keyword
+  
+}
+console.log(encrypt)
+*/
+
+// decoder
