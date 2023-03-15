@@ -51,20 +51,20 @@ for(let i = 0; i < arr.length; i ++){
 
 }
 */
-let arr = [ '(', ')', '(', ')', ')']
-let count = 0
-for(let i =0; i < arr.length; i ++){
-    if(arr[i] == '('){
-       count ++
-    }else if(arr[i] == ')'){
-        count --
-    }
-    if(count == 0){
-        console.log( i + ": " + "The open bracket has closed pair ")
-    }else{
-        console.log(i + ": " + "The open bracket doesn't have closed pair")
-    }
-}
+// let arr = [ '(', ')', '(', ')', ')']
+// let count = 0
+// for(let i =0; i < arr.length; i ++){
+//     if(arr[i] == '('){
+//        count ++
+//     }else if(arr[i] == ')'){
+//         count --
+//     }
+//     if(count == 0){
+//         console.log( i + ": " + "The open bracket has closed pair ")
+//     }else{
+//         console.log(i + ": " + "The open bracket doesn't have closed pair")
+//     }
+// }
 
 /*
 let array = [ '(', ')', '(', ')', ')'];
@@ -108,12 +108,24 @@ if(counter == 0) {
 //  *********
 /*
 */
+let rows = 5;
 
+// pattern variable carries the final pattern in string format
+let pattern = "";
 
-for(let i = 1; i <= rows; i++){ // loop for row
-    let str = " "
-    for(let k = 1; k <=(rows - 1); k++){
-      str += " "
-    }
-    console.log(result)
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= rows; n++) {  //print rows
+   // Inner Loop - I -> prints spaces
+   for (let space = 1; space <= rows - n; space++) {
+      pattern += " ";
+   }
+
+   // Inner Loop - II -> prints stars 
+   for (let num = 1; num <= 2 * n - 1; num++) { // print columns 
+      pattern += "*";
+      
+   }
+
+   pattern += "\n";
 }
+console.log(pattern);
