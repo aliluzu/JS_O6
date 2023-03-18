@@ -97,7 +97,7 @@ if(counter == 0) {
   console.log("у каждой скобки есть пара");
 } else if (counter < 0 || counter > 0) {
   console.log("скобочка осталась без пары...");
-}
+git }
 */
 
 // 4. 
