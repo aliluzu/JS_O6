@@ -234,28 +234,28 @@ console.log(str)
 
 // --------------------------------------
 
-let n = 5
+let n = 10
 
 let str = '';
 
 for(let i = 1; i <= n; i ++){
-    str += " ".repeat(n-i) //example 2:  of space 
+    str += ' '.repeat(n - i) //example 2:  of space 
     for(let j = 1; j <= i; j++){
-        str += j;
+        str += j % 10
     }
     for(let k = i-1; k>= 1; k--){
-        str += k
+        str += k % 10
     }
     str += '\n'  
 }
 
-for(let i = n-1; i >=1; i--){
-    str += " ".repeat(n-1);
-    for(let j =1 ; j <=i; j++){
-        str += j
+for(let i = n - 1; i >= 1; i--){
+    str += ' '.repeat(n - i);
+    for(let j = 1 ; j <= i; j++){
+        str += j % 10
     }
-    for(let k = i-1; k>= 1; k--){
-        str += k
+    for(let k = i - 1; k>= 1; k--){
+        str += k % 10
     }
     str += '\n'  
 }
