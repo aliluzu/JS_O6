@@ -143,23 +143,23 @@ let starsLow = "*"
 
 let pattern = ""
 
-// for(let n  = 1; n <= rows; n++){
-//   for(let space = 1; space <= rows; space++){
-//     pattern += " ";
-//   }
-//   for(let num = 1; num <= n; num++){
-//     pattern += starsUpper
-//   }
-//   pattern += "\n"
-// }
+for(let n  = 1; n <= rows; n++){
+  for(let space = 1; space <= rows; space++){
+    pattern += " ";
+  }
+  for(let num = 1; num <= n; num++){
+    pattern += starsUpper
+  }
+  pattern += "\n"
+}
 
-// for(let n = 1; n <= rows; n++){
-//   for(let num = 1; num <= 6-n; num++){
-//     pattern += starsLow
-//   }
-//   pattern += "\n"
-// }
-// console.log(pattern)
+for(let n = 1; n <= rows; n++){
+  for(let num = 1; num <= 6-n; num++){
+    pattern += starsLow
+  }
+  pattern += "\n"
+}
+console.log(pattern)
 /*
 for (let n = 1; n <= rows; n++) {  //print rows
   for (let space = 1; space <= rows - n; space++) {
