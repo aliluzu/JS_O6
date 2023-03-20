@@ -143,24 +143,24 @@ let starsLow = "*"
 
 let pattern = ""
 
-for(let n  = 1; n <= rows; n++){
-  for(let space = 1; space <= rows; space++){
-    pattern += " ";
-  }
-  for(let num = 1; num <= n; num++){
-    pattern += starsUpper
-  }
-  pattern += "\n"
-}
+// for(let n  = 1; n <= rows; n++){
+//   for(let space = 1; space <= rows; space++){
+//     pattern += " ";
+//   }
+//   for(let num = 1; num <= n; num++){
+//     pattern += starsUpper
+//   }
+//   pattern += "\n"
+// }
 
-for(let n = 1; n <= rows; n++){
-  for(let num = 1; num <= 6-n; num++){
-    pattern += starsLow
-  }
-  pattern += "\n"
-}
-console.log(pattern)
-/*
+// for(let n = 1; n <= rows; n++){
+//   for(let num = 1; num <= 6-n; num++){
+//     pattern += starsLow
+//   }
+//   pattern += "\n"
+// }
+// console.log(pattern)
+
 for (let n = 1; n <= rows; n++) {  //print rows
   for (let space = 1; space <= rows - n; space++) {
      pattern += " ";
@@ -185,7 +185,7 @@ for(let n = 1; n <= rows; n++){
 }
 console.log(pattern)
 
-*/
+
 // 6.Имеется зашифрованное предложение 
 // “Ybrobrubr brabrrbrebr brtbrhbrebr brbbrebrsbrtbr brQbrAbr brebrvbrebrrbr”
 // мы знаем, что оно означает “You are the best QA ever”.
