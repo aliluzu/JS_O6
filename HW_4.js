@@ -30,8 +30,8 @@ for(let i = 1; i <= rows; i++){
     for(let j = 1; j <= i; j ++){
         str += j
     }
-    for(let k = i - 1; k >= i - 1; k --){
-        str += k
+    for(let k = i - 1; k >= i - 1 ; k --){
+        str += k 
     }
 }
 console.log(str)
