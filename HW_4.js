@@ -18,7 +18,7 @@
 //        12321
 //         121
 //          1
-
+/*
 let rows = 10;
 let str = "";
 
@@ -53,5 +53,30 @@ for(let i = rows - 1; i >= 1; i--){
     // str += '\n'  
 }
 console.log(str)
+*/
 
+// 2.Print
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+/*
+let rows = 5;
+
+let str = ""
+
+for(let i = 1; i <= rows; i ++){
+
+    for (let space = 1; space <= rows - i; space++) {
+        str += " ";
+     }
+    for(let j = 1; j <= 2 * i - 1; j++){
+        str+= "*"
+    }
+    str += "\n"
+}
+console.log(str)
+*/
 

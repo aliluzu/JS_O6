@@ -119,7 +119,7 @@ let pattern = "";
 for (let n = 1; n <= rows; n++) {  //print rows
    // Inner Loop - I -> prints spaces
    for (let space = 1; space <= rows - n; space++) {
-      pattern += " ";
+      pattern += /javascript.html" ";
    }
 
    // Inner Loop - II -> prints stars 
