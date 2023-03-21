@@ -39,10 +39,11 @@ for(let i = 1; i <= rows; i++){
 }
 
 for(let i = rows - 1; i >= 1; i--){
-    str += '\n'
-    for(let space = 1; space <= rows - i; space++){
-        str += " ";
-    }
+    str += ' '.repeat(rows - i);
+    // str += '\n'
+    // for(let space = 1; space <= rows - i; space++){
+    //     str += " ";
+    // }
     for(let j = 1 ; j <= i; j++){
         str += j % 10
     }
