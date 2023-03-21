@@ -39,45 +39,19 @@ for(let i = 1; i <= rows; i++){
 }
 
 for(let i = rows - 1; i >= 1; i--){
-    str += ' '.repeat(rows - i);
-    // str += '\n'
-    // for(let space = 1; space <= rows - i; space++){
-    //     str += " ";
-    // }
+    // str += ' '.repeat(rows - i);
+    str += '\n'
+    for(let space = 1; space <= rows - i; space++){
+        str += " ";
+    }
     for(let j = 1 ; j <= i; j++){
         str += j % 10
     }
     for(let k = i - 1; k>= 1; k--){
         str += k % 10
     }
-    str += '\n'  
+    // str += '\n'  
 }
 console.log(str)
 
 
-// let n = 10
-
-// let str = '';
-
-// for(let i = 1; i <= n; i ++){
-//     str += ' '.repeat(n - i) //example 2:  of space 
-//     for(let j = 1; j <= i; j++){
-//         str += j % 10
-//     }
-//     for(let k = i - 1; k >= 1; k--){
-//         str += k % 10
-//     }
-//     str += '\n'  
-// }
-
-// for(let i = n - 1; i >= 1; i--){
-//     str += ' '.repeat(n - i);
-//     for(let j = 1 ; j <= i; j++){
-//         str += j % 10
-//     }
-//     for(let k = i - 1; k>= 1; k--){
-//         str += k % 10
-//     }
-//     str += '\n'  
-// }
-// console.log(str)
