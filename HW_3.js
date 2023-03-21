@@ -161,17 +161,17 @@ let pattern = ""
 // }
 // console.log(pattern)
 
-for (let n = 1; n <= rows; n++) {  //print rows
-  for (let space = 1; space <= rows - n; space++) {
-     pattern += " ";
-  }
+// for (let n = 1; n <= rows; n++) {  //print rows
+//   for (let space = 1; space <= rows - n; space++) {
+//      pattern += " ";
+//   }
 
-  for (let num = 1; num <= 2 * n - 1; num++) { // print columns 
-     pattern += starsUpper;
+//   for (let num = 1; num <= 2 * n - 1; num++) { // print columns 
+//      pattern += starsUpper;
      
-  }
-  pattern += "\n";
-}
+//   }
+//   pattern += "\n";
+// }
 
 for(let n = 1; n <= rows; n++){
   for (let space = 1; space <= n; space++) {
