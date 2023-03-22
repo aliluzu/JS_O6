@@ -93,10 +93,10 @@ let rows = 5
 let str = ""
 
 for(let i = 1; i <= rows; i++){
+    let num = i
     for(let j = 1; j <= i + 1; j++){
-        str += i + " "
-       
-        str+= (j + 4)
+        str += num + " "
+        num = num + (rows - j)
     }
     str += "\n"
     
