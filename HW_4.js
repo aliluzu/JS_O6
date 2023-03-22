@@ -80,3 +80,35 @@ for(let i = 1; i <= rows; i ++){
 console.log(str)
 */
 
+
+// 3.Print
+// 1 
+// 2 6 
+// 3 7 10 
+// 4 8 11 13 
+// 5 9 12 14 15
+
+
+let rows = 5
+let str = ""
+
+for(let i = 1; i <= rows; i++){
+    for(let j = 1; j <= i + 1; j++){
+        str += i + " "
+       
+        str+= (j + 4)
+    }
+    str += "\n"
+    
+}
+console.log(str)
+
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+//     let count = i;
+//     for (let j = 1; j <= i; j++) {
+//       row += count + " ";
+//       count += (5 - j);
+//     }
+//     console.log(row);
+//   }
