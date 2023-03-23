@@ -186,10 +186,11 @@ for (let i = 0; i < myArr.length; i++){
     }else if (myArr[i] == ')') countClose += 1
 
     result = counOpen - countClose
+    console.log(result)
     if(result < 0 ){
         console.log('Wrong sequance')
     }break;
-    console.log(result)
+    
 }
 
 if(counOpen == countClose){
