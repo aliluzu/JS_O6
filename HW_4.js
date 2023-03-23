@@ -89,26 +89,19 @@ console.log(str)
 // 5 9 12 14 15
 
 
-let rows = 5
-let str = ""
 
-for(let i = 1; i <= rows; i++){
-    let num = i
-    for(let j = 1; j <= i + 1; j++){
-        str += num + " "
-        num = num + (rows - j)
-    }
-    str += "\n"
-    
+let str = ""
+let rows = 5                                             // 1 lopp                           2 loop                                    3 lopp
+                                           
+
+for(let i = 1; i <= rows; i++){                          //i = 1                            i = 2                                     i = 3
+    let num = i                                          // num = 1                         num = 2                                   num = 3
+    for(let j = 1; j <= i ; j++){                       // j = 1                            j = 1, 2                                  j = 1, 2,
+        str += num + " "                                // str += num(1) + space            str += (2 + space)
+        num = num + (rows - j)                          // num = 1 + (5-1)                  num = 2 + (5-1)                          str += (3 + space)
+    }                                                                                                                               // num = 3 + (5 - 1)
+    str += "\n"                                                                            //str += (2+space) + (6+space)           str += (3 + space) + (7 + space)
+                                                                                                                                    // num = 7 + (5 - 2)
+                                                                                                                                   // str+= (3 + psace) + (7 + space) + (10 + space)
 }
 console.log(str)
-
-// for (let i = 1; i <= 5; i++) {
-//     let row = "";
-//     let count = i;
-//     for (let j = 1; j <= i; j++) {
-//       row += count + " ";
-//       count += (5 - j);
-//     }
-//     console.log(row);
-//   }
