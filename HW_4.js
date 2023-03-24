@@ -179,13 +179,18 @@ let counOpen = 0
 let countClose = 0
 let result = 0
 
-let myArr = [ ')', '{', '(', '(', ')', ')', '}', '[', ']', '(' ]
+// let myArr = [ ')', '{', '(', '(', ')', ')', '}', '[', ']', '(' ]
+// let myArr = [ '{', '(', '(', ')', ')', '}', '[', ']' ] 
+let myArr = [ '{', '(', '(', ')', ')', '}', '[', '[', ')' ] 
+
+// for (let i in myArr) //2nd case
 for (let i = 0; i < myArr.length; i++){
     if(myArr[i] == '('){
         counOpen += 1
     }else if (myArr[i] == ')') countClose += 1
 
     result = counOpen - countClose
+    
     console.log(result)
     if(result < 0 ){
         console.log('Wrong sequance')
