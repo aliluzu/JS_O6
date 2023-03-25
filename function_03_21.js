@@ -14,7 +14,7 @@
 //=================== Options 3: arrow function ========
 // let name =(arg1, arg2) => expression
 
-// print("Hi")
+
 /*
 function sum(a, b){
     let result =  a + b
@@ -32,9 +32,33 @@ function sum(a, b){
 console.log(sum(3, 6))
 */
 
+/*
 function sum(a, b = 7){
     let result = a + b
     return result
 }
 
 console.log(sum (10))
+*/
+
+/*
+function sum(a = 5, b =7){
+    result = a + b
+    return result
+}
+console.log(sum)
+
+function print(a, b){
+    let sum2 = sum(2,2)
+    console.log(a + sum2)
+    return sum2
+
+}
+console.log(print())
+*/
+
+
+function showMessage(name){ //local
+    return name = 'Aliz'
+}
+console.log(showMessage())
