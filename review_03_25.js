@@ -109,3 +109,17 @@ console.log(printName(10, sum(20, 50))) // step 4: 10 + 70  + Hi
 
 
 // ------------------------------ -----------------------------------
+
+function additional(num1, num2){
+    return  num1 + num2
+}
+
+function substraction(num1, num2){
+    return num1 - num2;
+}
+
+function result(num1, num2, callback){ //callback  is like argument where we're sednting one of function
+    return callback(num1, num2)
+}
+console.log(result(10, 20, additional))
+console.log(result(40, 20, substraction))
