@@ -67,16 +67,45 @@ console.log(printName(10, sum(20, 50))) // step 4: 10 + 70  + Hi
 
 // ------------------------------ -----------------------------------
 
-let str = "Hello"
+// let str = "Hello"
 
-function printInfo(){
-    console.log("1")
-    console.log("2")
-    console.log("3")
-    console.log("4")
-    console.log("5")
-    console.log("----")
-}
-printInfo()
-printInfo()
-printInfo()
+// function printInfo(){
+//     console.log("1")
+//     console.log("2")
+//     console.log("3")
+//     console.log("4")
+//     console.log("5")
+//     console.log("----")
+// }
+// printInfo()
+// printInfo()
+// printInfo()
+
+// ------------------------------ -----------------------------------
+
+// let printName = function(name){
+//     return `Hello ${name}`
+// }
+// console.log(printName('Alina'))
+
+// ------------------------------ -----------------------------------
+
+// let printName = name => `Hello ${name}`
+// console.log(printName('Alina'))
+
+
+// ------------------------------ -----------------------------------
+
+// let printName = (name) => {
+//     let greeting = `Hello ${name}`
+//     return 'Good morning ' + greeting
+// }
+// console.log(printName("Alina"))
+
+// ------------------------------Only for 1 row -----------------------------------
+
+// const sum = (num1, num2) =>  `${num1} + ${num2} = ${num1 + num2}`;
+// console.log(sum(10, 20))
+
+
+// ------------------------------ -----------------------------------
