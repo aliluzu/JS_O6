@@ -175,11 +175,26 @@ console.log(sum1)
 //     console.log(result)
 // }
 
-let str = "Hello!"
-let result1
-for(let i = 1; i <= str.length; i+=2){
-    result1 = i
-    console.log(result1)
-}
+// let str = "Hello!"
+// let result1
+// for(let i = 1; i <= str.length; i+=2){
+//     result1 = i
+//     console.log(result1)
+// }
 
 // --------------------change string---------
+
+function howManydays(month){
+    var days;
+    switch (month){
+        case 4: case 6: case 9: case 11:
+        days = 30; break;
+        case 2: 
+        days = 28; break;
+        default:
+        days = 31;
+    }
+    return days;
+  }
+  
+  console.log(howManydays(3))
