@@ -97,7 +97,7 @@ console.log(result)
 */
 // ----------- example 6 --------
 
-let arr = ['Tom', 'green', 55, 'apple', 43, 88, 'pear', 'red', 1];
+// let arr = ['Tom', 'green', 55, 'apple', 43, 88, 'pear', 'red', 1];
 
 // =============== 1st example ================
 /*
@@ -113,11 +113,31 @@ console.log(indexOfElement(arr))
 
 // =============== 2nd example ================
 
-function indexOfElement(array, num){
-    for(let i = 0; i < array.length; i++){
-        if(array[i] === num){
-            return i
-        }
+// function indexOfElement(array, num){
+//     for(let i = 0; i < array.length; i++){
+//         if(array[i] === num){
+//             return i
+//         }
+//     }
+// }
+// console.log(indexOfElement(arr, 88))
+
+
+// =======================================================
+
+let arr = [[31, 67, 7, 45, 87, 59, 21, 3, 1], [20, 48, 76, 2, 78, 42, 72, 98]]
+
+function pickIt(arr){
+    var odd=[],even=[];
+    for(let i = 0; i < arr.length; i ++ ){
+      if( arr[i] % 2 != 0){
+        odd.push(arr[i])
+      }else{
+        even.push(arr[i])
+      }
     }
-}
-console.log(indexOfElement(arr, 88))
+    
+    return [odd, even];
+  }
+
+  console.log(pickIt(arr))
