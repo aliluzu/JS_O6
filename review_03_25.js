@@ -109,7 +109,7 @@ console.log(printName(10, sum(20, 50))) // step 4: 10 + 70  + Hi
 
 
 // ------------------------------ -----------------------------------
-
+/*
 function additional(num1, num2){
     return  num1 + num2
 }
@@ -123,3 +123,82 @@ function result(num1, num2, callback){ //callback  is like argument where we're 
 }
 console.log(result(10, 20, additional))
 console.log(result(40, 20, substraction))
+*/
+
+// ------------------------------ -----------------------------------
+
+/*
+const additional = (num1, num2) => {
+    return  num1 + num2
+}
+
+const substraction = (num1, num2) => {
+    return num1 - num2;
+}
+
+function result(num1, num2, callback){ //callback  is like argument where we're sednting one of function
+    return callback(num1, num2)
+}
+console.log(result(10, 20, additional))
+console.log(result(40, 20, substraction))
+*/
+// ------------------------------ 1st example-----------------------------------
+/*
+
+const product = function(num1, num2){
+    return num1 * num2
+}
+
+function result(num1, num2, product){ 
+    return product(num1, num2)
+}
+console.log(result(10, 20, product))
+*/
+
+// -----------2
+
+/*
+const product = (num1, num2) => num1 * num2
+
+function result(num1, num2, product){ 
+    return product(num1, num2)
+}
+console.log(result(10, 20, product))
+*/
+// -----------3
+
+// const product = (num1, num2) => num1 * num2 //no needed
+/*
+function result(num1, num2, product){ 
+    return product(num1, num2)
+}
+console.log(result(10, 20, (num1, num2) => num1 * num2))
+*/
+
+// ------------------------------ function + loop-----------------------------------
+/*
+function sum(){
+    let result = 0;
+    for(let i = 0; i < arguments.length; i++){
+        result += arguments[i]
+    }
+    return result;
+}
+console.log(sum(10, 30))
+console.log(sum(10, 30, 40))
+console.log(sum(10, 30, 40, 13))
+*/
+
+// -------------------
+
+
+function sum(){
+    let result = 0;
+    for(el of arguments){
+        result += el
+    }
+    return result;
+}
+console.log(sum(10, 30))
+console.log(sum(10, 30, 40))
+console.log(sum(10, 30, 40, 13))
