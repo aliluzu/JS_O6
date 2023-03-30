@@ -125,19 +125,19 @@ console.log(indexOfElement(arr))
 
 // =======================================================
 
-let arr = [[31, 67, 7, 45, 87, 59, 21, 3, 1], [20, 48, 76, 2, 78, 42, 72, 98]]
+// let arr = [[31, 67, 7, 45, 87, 59, 21, 3, 1], [20, 48, 76, 2, 78, 42, 72, 98]]
 
-function pickIt(arr){
-    var odd=[],even=[];
-    for(let i = 0; i < arr.length; i ++ ){
-      if( arr[i] % 2 != 0){
-        odd.push(arr[i])
-      }else{
-        even.push(arr[i])
-      }
-    }
+// function pickIt(array){
+//     var odd=[],even=[];
+//     for(let i = 0; i < array.length; i ++ ){
+//       if( array[i] % 2 != 0){
+//         odd.push(array[i])
+//       }else{
+//         even.push(array[i])
+//       }
+//     }
     
-    return [odd, even];
-  }
+//     return [odd, even];
+//   }
 
-  console.log(pickIt(arr))
+//   console.log(pickIt(arr))

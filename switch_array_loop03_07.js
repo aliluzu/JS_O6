@@ -184,17 +184,39 @@ console.log(sum1)
 
 // --------------------change string---------
 
-function howManydays(month){
-    var days;
-    switch (month){
-        case 4: case 6: case 9: case 11:
-        days = 30; break;
-        case 2: 
-        days = 28; break;
-        default:
-        days = 31;
-    }
-    return days;
-  }
+// function howManydays(month){
+//     var days;
+//     switch (month){
+//         case 4: case 6: case 9: case 11:
+//         days = 30; break;
+//         case 2: 
+//         days = 28; break;
+//         default:
+//         days = 31;
+//     }
+//     return days;
+//   }
   
-  console.log(howManydays(3))
+//   console.log(howManydays(3))
+
+
+let arrDolls = ["Mickey Mouse","Barbie doll","Hello Kitty","Hello Kitty","Hello Kitty","Snow white"]
+
+// console.log(arrDolls.length)
+
+function grabDoll(dolls){
+    var bag=[];
+    for(let i = 0; i < dolls.length; i ++){
+      if(dolls[i] === "Hello Kitty" ||  dolls[i] === "Barbie doll"){
+        bag.push(dolls[i])
+      }else{
+        continue
+      }if(bag.length == 3){
+        break
+      }
+    }
+    
+    return bag;
+  }
+
+  console.log(grabDoll(arrDolls))
