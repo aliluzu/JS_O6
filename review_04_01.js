@@ -88,8 +88,8 @@ createCount()
 //     console.log("Hello")
 // })()
 
-// -----------zamikanie
-
+// -----------zamikanie(closure)--------------------
+/*
 function counter() {
     let count = 0
 
@@ -109,3 +109,23 @@ counter_1()
 counter_2()
 counter_2()
 counter_2()
+
+*/
+//----------------- task from interview --------
+function generate(seed) {
+    var private = seed;
+    return function (param) {
+      private += seed;
+      return private + param;
+    };
+  }
+  
+  var a = generate(1);
+  var b = generate(2);
+
+//   a(1) + a(2) + b(3) + b(4);
+
+// console.log(a(1))
+// console.log(a(2))
+
+console.log(a(1) + a(2))
