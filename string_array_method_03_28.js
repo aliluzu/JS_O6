@@ -194,33 +194,37 @@ console.log(newText2)
 
 
 
-//== repeat()
+//========================= repeat()
 //Create copies of a text:
 
-// let q = "Helo!"  //012
-// console.log(q.slice(1,3).repeat(4))
+/*
+let q = "Helo!"  //012
+console.log(q.slice(1,3).repeat(4))
 
-//Create copies of a text:
+// Create copies of a text:
 
-//let text = "Hello world!";
-//let result = text.repeat(2);
-//console.log(result)
+let text = "Hello world!";
+let result = text.repeat(2);
+console.log(result)
+*/
 
-
-// == trim()
+// ================== trim()
 //Remove spaces with trim():
 
-// let text = "   Hello World!   .";
-// let result = text.trim();
-//console.log(text.toUpperCase())
-// console.log(text)
-// console.log(result)
+/*
+let text = "   Hello World!   .";
+let result = text.trim();
+console.log(text.toUpperCase())
+console.log("default example: ", text)
+console.log("trim: ", result)
+*/
 
-
-// console.log(String(7));                    // converts to string
-// let num = String(7)
-// let num2 = 5
-// console.log(num + num2)
+/*
+console.log(String(7));                    // converts to string
+let num = String(7)
+let num2 = 5
+console.log(num + num2)
+*/
 
 // let fruits = ["Banana", "Orange", "Apple", "Mango"];
 // delete fruits[1];
