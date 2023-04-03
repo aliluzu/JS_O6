@@ -203,7 +203,7 @@ console.log(sum1)
 let arrDolls = ["Mickey Mouse","Barbie doll","Hello Kitty","Hello Kitty","Hello Kitty","Snow white"]
 
 // console.log(arrDolls.length)
-
+/*
 function grabDoll(dolls){
     var bag=[];
     for(let i = 0; i < dolls.length; i ++){
@@ -220,3 +220,25 @@ function grabDoll(dolls){
   }
 
   console.log(grabDoll(arrDolls))
+*/
+
+//   ======================================
+let obj = {Our:"earth",is:"a",beautyful:"world"}
+
+// for (const [key, value] of Object.entries(object1)) {
+//     console.log(`${key}: ${value}`);
+//   }
+
+function giveMeFive(obj){
+    var array = [];
+    for (const [key, value] of Object.entries(obj)) {
+        if(key.length == 5 ){
+            array.push(`${key}`)
+        }
+        if(value.length == 5){
+            array.push(`${value}`)
+        }
+        
+    }
+    return array
+  ;}
