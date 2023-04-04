@@ -226,3 +226,32 @@ console.log(newText2)
 // delete fruits[1];
 // console.log(typeof fruits[1])
 
+
+
+
+
+// let array = ["tail", "body", "head"]
+// let array1 =  ["lower legs", "torso", "upper legs"]
+
+
+
+// function fixTheMeerkat(arr) {
+//     return arr.reverse()
+// }
+// console.log(fixTheMeerkat(array))
+// console.log(fixTheMeerkat(array1))
+
+
+// function fixTheMeerkat(arr) {
+//     for(let i = 0; i < arr.length; i ++){
+//         arr[i].split('').reverse().join('')
+//     }
+//     return arr
+// }
+// console.log(fixTheMeerkat(array))
+
+let num = 35231
+function digitize(n) {
+    return  n.toString().split('').reverse().map(Number)
+}
+console.log(digitize(num))
