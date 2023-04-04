@@ -32,14 +32,16 @@
 
 function checkPalindrome(string) {
 
-    // convert string to an array
-    const arrayValues = string.split('');
+    const reverseString = string.split('').reverse().join('');
 
-    // reverse the array values
-    const reverseArrayValues = arrayValues.reverse();
+    // // convert string to an array
+    // const arrayValues = string.split('');               // ["h", "e", "l", "l", "o"] converts the string into individual array characters.
 
-    // convert array to string
-    const reverseString = reverseArrayValues.join('');
+    // // reverse the array values
+    // const reverseArrayValues = arrayValues.reverse();  // ["o", "l", "l", "e", "h"]   The reverse() method
+
+    // // convert array to string
+    // const reverseString = reverseArrayValues.join('');  // "olleh"  all the elements of an array into a string
 
     if(string == reverseString) {
         console.log('It is a palindrome');
