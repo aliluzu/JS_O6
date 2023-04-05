@@ -137,7 +137,9 @@ console.log(a(1) + a(2))
 // I
 //  I
 //   I
- 
+
+//------------------------------ 1 
+ /*
 function createSteps(n){
     let str = ''
     for(let i  = 0; i <= n; i++){
@@ -147,3 +149,31 @@ function createSteps(n){
 }
 
 console.log(createSteps(5))
+*/
+
+//------------------------------ 2
+/*
+function createSteps(n){
+    let arr = []
+    for(let i  = 0; i <= n; i++){
+        arr.push( " ".repeat(i) + "I")
+    }
+    return arr;
+}
+
+console.log(createSteps(5).join('\n'))
+*/
+
+//------------------slice()-------------------------
+/*
+const arr = ['t', 'e', 's', 't']
+// const arrNew = ["t", "e", "s", "t"]
+// const arrNew = arr
+const arrNew = arr.slice() //copy of "arr"
+
+
+arr[0] = 'T'
+console.log(arr)
+console.log(arrNew)  
+*/
+
