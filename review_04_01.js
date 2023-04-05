@@ -112,6 +112,9 @@ counter_2()
 
 */
 //----------------- task from interview --------
+
+
+/*
 function generate(seed) {
     var private = seed;
     return function (param) {
@@ -129,3 +132,18 @@ function generate(seed) {
 // console.log(a(2))
 
 console.log(a(1) + a(2))
+*/
+
+// I
+//  I
+//   I
+ 
+function createSteps(n){
+    let str = ''
+    for(let i  = 0; i <= n; i++){
+        str += " ".repeat(i) + "I" + "\n"
+    }
+    return str;
+}
+
+console.log(createSteps(5))
