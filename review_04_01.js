@@ -170,6 +170,7 @@ const arr = ['t', 'e', 's', 't']
 // const arrNew = ["t", "e", "s", "t"]
 // const arrNew = arr
 const arrNew = arr.slice() //copy of "arr"
+const arrNew = arr.slice(1, 3) // startIndex, lastIndex
 
 
 arr[0] = 'T'
@@ -177,3 +178,7 @@ console.log(arr)
 console.log(arrNew)  
 */
 
+//------------------splice()-------------------------
+
+const arr = ['t', 'e', 's', 't']
+console.log(arr.splice(0, 1, 'T'))
