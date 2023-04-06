@@ -179,6 +179,15 @@ console.log(arrNew)
 */
 
 //------------------splice()-------------------------
-
+/*
 const arr = ['t', 'e', 's', 't']
-console.log(arr.splice(0, 1, 'T'))
+console.log(arr.splice(0, 1, 'T')) //shows removed element 
+*/
+
+
+//------------------indexOf && lastIndexOf-------------------------
+const arr = "Hello world!".split('') //convert to array
+
+console.log(arr.indexOf('w'))   //index of characters
+
+console.log(arr.lastIndexOf('w'))
