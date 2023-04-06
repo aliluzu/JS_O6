@@ -186,8 +186,24 @@ console.log(arr.splice(0, 1, 'T')) //shows removed element
 
 
 //------------------indexOf && lastIndexOf-------------------------
+/*
 const arr = "Hello world!".split('') //convert to array
 
 console.log(arr.indexOf('w'))   //index of characters
 
 console.log(arr.lastIndexOf('w'))
+*/
+
+//-----------------find()  element----------------------
+
+const arr = [2, 3, 2, 29, 39, 45]
+
+const isOdd = (element) => {
+    return element % 2 == 1
+}
+
+console.log(arr.find(isOdd)) // find the 1st element which is odd -> 3
+
+//-----------------findindex()----------------------
+
+console.log(arr.findIndex(isOdd)) // return Index
