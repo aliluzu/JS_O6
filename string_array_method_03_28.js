@@ -254,8 +254,32 @@ console.log(num + num2)
 // }
 // console.log(fixTheMeerkat(array))
 
-let num = 35231
-function digitize(n) {
-    return  n.toString().split('').reverse().map(Number)
-}
-console.log(digitize(num))
+// let num = 35231
+// function digitize(n) {
+//     return  n.toString().split('').reverse().map(Number)
+// }
+// console.log(digitize(num))
+
+
+
+// == ---------------------------------compare arrays ------------------
+/*
+let arr = [1, 2]
+let arr1 = ["a", "b"]
+
+console.log(arr == arr1) //false
+console.log(arr > arr1)//false
+console.log(arr1 < arr)//false
+
+*/
+
+const a1 = [1, 2, 7]
+const b1 = [1, 2, 5]
+const c1 = [1, 2, 7]
+
+// 1st example ------------------------
+console.log(JSON.stringify(a1) == JSON.stringify(b1)) //compare string  -> /output: false
+console.log(JSON.stringify(a1) == JSON.stringify(c1)) //output: true
+
+// 2nd example ------------------------
+console.log(b1.toString() === a1.toString()) //output: false
