@@ -34,29 +34,31 @@ It is a common practice to declare objects with the const keyword.
 //   job: "QA engineer",
 //   isAdmin: false
 // }
-// let arrNew = [["name", 'Olya']["age", 22]]
-// // arrNew[0][1]
-// const person2 = {
-//     id: '02',
-//     personalInfo: {
-//        name: {
-//           first: 'Jane',
-//           last: 'Dow',
-//        },
-//       dob: '01/01/1990',
-//       "contactInfo": {
-//         phone: '+123456789',
-//         email: null,
-//         address: {
-//           city: "Boston",
-//           state: "M"
-//         }
-//       },
-//     },
-//    purchases: [null],
-//    car: "Suzuki"
-//   }
-// console.log(person2['personalInfo']['name'].last);
+
+
+let arrNew = [["name", 'Olya']["age", 22]]
+// arrNew[0][1]
+const person2 = {
+    id: '02',
+    personalInfo: {
+       name: {
+          first: 'Jane',
+          last: 'Dow',
+       },
+      dob: '01/01/1990',
+      "contactInfo": {
+        phone: '+123456789',
+        email: null,
+        address: {
+          city: "Boston",
+          state: "M"
+        }
+      },
+    },
+   purchases: [null],
+   car: "Suzuki"
+  }
+console.log(person2['personalInfo']['name'].last);
 
 //  console.log(typeof person2);
 
