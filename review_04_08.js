@@ -67,7 +67,7 @@ console.log(arrNew) // [ [ 1, 0 ], [ 1, 2 ], [ 1, 3 ], [ 2, 2 ], [ 3, 4 ] ]
 */
 
 // ----------------map()------------------------------return a new array
-
+/*
 const arr = [2, 6, 3, 27, 9, 56, 103, 1, 1001, 3940]
 
 let arrNew = arr.map(el => el ** 2)
@@ -115,3 +115,15 @@ let arrNew3 = arr.map((el, i) => {
 console.log("arrNewCallBack:", arrNewCallBack)
 console.log("arrNew2: ", arrNew2)
 console.log("arrNew3: ", arrNew3)
+*/
+
+// ----------------reduce()------------------------------
+const arr = [2, 6, 3, 5, 9]
+
+const result = arr.reduce((acc, el, i, arr) => acc + el,0)
+// acc = 0
+// 2 Steps: el = 2, acc = 0 + 2 = 2
+// 3 Steps: el = 6, acc = 2 + 6 = 8
+// 4Steps: el  = 3, acc = 8 + 2 = 11
+
+console.log(result)
