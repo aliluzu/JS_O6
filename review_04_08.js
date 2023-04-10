@@ -118,6 +118,7 @@ console.log("arrNew3: ", arrNew3)
 */
 
 // ----------------reduce()------------------------------
+/*
 const arr = [2, 6, 3, 5, 9]
 
 const result = arr.reduce((acc, el, i, arr) => acc + el,0)
@@ -127,3 +128,104 @@ const result = arr.reduce((acc, el, i, arr) => acc + el,0)
 // 4Steps: el  = 3, acc = 8 + 2 = 11
 
 console.log(result)
+*/
+// ----------------"function"-------Array.from-----------------------
+
+//3 rules of method:
+//1.length
+
+/*
+const arr = Array.from('JavaScript')
+console.log(arr)
+*/
+
+/*
+// const arr = Array.from('JavaScript', el => "*" + el + "*")
+const arr = Array.from('JavaScript').map( el => "*" + el + "*")
+console.log(arr)
+
+// ----------------"function"-------Array.of-----------------------
+
+const arr2 = Array.of(1, "str", NaN, true, undefined) // -> array created
+console.log(arr2)
+
+// ----------------"function"-------Array.isArray-----------------------
+
+console.log(Array.isArray(arr2))
+*/
+
+// ----------------comparing of Array----------------------------------
+/*
+const arr1 = [1, 2, 3]
+const arr2 = [1, 2, 3]
+
+console.log(arr1 == arr2 ) // output: false
+
+const arr3 = arr1
+arr1[0] == 11
+console.log(arr1, arr3)
+console.log(arr1 == arr3) // output: true. Bacause there is th elink like "const arr3 = arr1"
+*/
+
+/*
+const arr1 = [1, 2, 3]
+const arr2 = [1, 2, 3]
+
+console.log(arr1.toString() === arr2.toString())           // output: true
+console.log(JSON.stringify(arr1) === JSON.stringify(arr2)) // output: true
+*/
+
+// ----------------string method rap-----------------------
+/*
+const str = 'Stan'             //output: string
+
+const strNew = new String('Stan')
+console.log(typeof strNew)    //outPut: object
+*/
+/*
+const str = 'Stan'
+const str1 = "JS"
+const str2 = "06"
+
+console.log(str.concat(' ', str2, ' ', str1)) //output: Stan 06 JS
+*/
+
+// ----------------padStart-----------------------
+
+// padStart(length, otherStr)
+
+/*
+const str = 'Stan'
+const str3 = str.padStart(9, '_')
+const str4 = str.padStart(13, 'Ali')
+
+console.log(str3) //output: _____Stan
+console.log(str4) //output: AliAliAliStan
+*/
+
+// ----------------padEnd-----------------------
+/*
+const str = 'Stan'
+const str3 = str.padEnd(9, '_')
+
+console.log(str3) //output: Stan_____
+*/
+
+const str = 'potato'
+const str1 = 'blueberries'
+const str2 = '06'
+
+/*
+const str3 = str.padStart(20, ' ')  //output:               potato
+const str4 = str1.padStart(20, " ") //output:          blueberries
+
+console.log(str3)
+console.log(str4)
+*/
+
+const str3 = str.padEnd(20, ' ')
+const str4 = str1.padEnd(20, " ")
+
+console.log(str3, '2.00') //output: potato               2.00
+console.log(str4, '4.00') //output: blueberries          4.00
+
