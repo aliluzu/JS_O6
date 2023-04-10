@@ -36,8 +36,9 @@ It is a common practice to declare objects with the const keyword.
 // }
 
 
-let arrNew = [["name", 'Olya']["age", 22]]
+// let arrNew = [["name", 'Olya']["age", 22]]
 // arrNew[0][1]
+/*
 const person2 = {
     id: '02',
     personalInfo: {
@@ -59,6 +60,8 @@ const person2 = {
    car: "Suzuki"
   }
 console.log(person2['personalInfo']['name'].last);
+console.log(person2.personalInfo.contactInfo);
+*/
 
 //  console.log(typeof person2);
 
@@ -70,17 +73,18 @@ console.log(person2['personalInfo']['name'].last);
 
 // let obj = new Object();
 // let user = {};
-
-// let obj = {
-//   name: 'Bob',
-//   "age": 21,
-//   "isAdult": true,
-//   "salary": undefined,
-//   4: null,
-//   address: [],
-//   myObj: {}
-// };
-// console.log(obj);
+/*
+let obj = {
+  name: 'Bob',
+  "age": 21,
+  "isAdult": true,
+  "salary": undefined,
+  4: null,
+  address: [],
+  myObj: {}
+};
+console.log(obj);
+*/
 
 // Последнее свойство объекта (property) может заканчиваться запятой ",".
 
@@ -98,16 +102,19 @@ console.log(person2['personalInfo']['name'].last);
 //    highSchool: true,
 // }
 
-// console.log("original ", user1 );
+// // console.log("original ", user1 );
 
-// //value of age и name изменено:
+// // //value of age и name изменено:
+
 //  user1.age = 20;
 //  user1.name = 'Bill';
 //  console.log("modified ", user1);
-// console.log(user1[0])
+// console.log(user1['highSchool'])
 
 
-// // //добавлено свойство address:
+
+
+// // // //добавлено свойство address:
 // user1.address = {
 //   city: 'SF',
 //   state: 'CA',
@@ -191,28 +198,28 @@ console.log(person2['personalInfo']['name'].last);
 
 // // ============================================================
 // Обращение к свойствам объекта
-let arr = [1,3,5,7]
-const customers = [
-  {               //   !!! Array[0]
-    id: '01',                //
-    personalInfo: {  name: { first: 'John', last: 'Dow'}, },},
+// let arr = [1,3,5,7]
+// const customers = [
+//   {               //   !!! Array[0]
+//     id: '01',                //
+//     personalInfo: {  name: { first: 'John', last: 'Dow'}, },},
 
-  {                //    !!! Array[1]
-    id: '02',                //
-    personalInfo: {          //
-      name: {                //
-        first: 'Jane',       //
-        last: 'Dow',         //
-      },
-      dob: '01/01/1990',         //
-      "contactInfo": {           //
-        phone: '+123456789',     //
-        email: [3,7,[4,8]],             //
-        address: null,           //
-      },
-    },
-     purchases: [{two: 2},6, 3],           //
-  }];
+//   {                //    !!! Array[1]
+//     id: '02',                //
+//     personalInfo: {          //
+//       name: {                //
+//         first: 'Jane',       //
+//         last: 'Dow',         //
+//       },
+//       dob: '01/01/1990',         //
+//       "contactInfo": {           //
+//         phone: '+123456789',     //
+//         email: [3,7,[4,8]],             //
+//         address: null,           //
+//       },
+//     },
+//      purchases: [{two: 2},6, 3],           //
+//   }];
 
 // 1. Свойства 1-го уровня -array elements
 //   console.log(customers.length);
@@ -416,12 +423,12 @@ const customers = [
 // Object.entries(obj) – возвращает массив пар [ключ, значение].
 
 
-let user = {
-  name: "John",
-  age: 30,
-  isAdmin: true,
-  language: "JavaScript",
-};
+// let user = {
+//   name: "John",
+//   age: 30,
+//   isAdmin: true,
+//   language: "JavaScript",
+// };
 
 //console.log("Keys: ", Object.keys(user));    //выводит ключи (keys)
 //console.log("Values: ", Object.values(user));  //выводит значения (values)
@@ -429,15 +436,15 @@ let user = {
 
 // ======== перебор в цикле
 //console.log('===========');
-let user3 = {
-  name: {name: "Kate", age2 : 22},
-  age: 30,
-  language: 'en',
-  home: 'apartment',
-  number: 6
-}
+// let user3 = {
+//   name: {name: "Kate", age2 : 22},
+//   age: 30,
+//   language: 'en',
+//   home: 'apartment',
+//   number: 6
+// }
 
-// // перебор значений -checking values
-for (let i of Object.values(user3.name)) {
-  console.log(i); 
-}
+// // // перебор значений -checking values
+// for (let i of Object.values(user3.name)) {
+//   console.log(i); 
+// }
