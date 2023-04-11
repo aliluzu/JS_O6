@@ -29,7 +29,7 @@
 // console.log(checkPalindrome_str_arr(/eVE/g))
 
 // program to check if the string is palindrome or not
-
+/*
 function checkPalindrome(string) {
 
     const reverseString = string.split('').reverse().join('');
@@ -53,3 +53,20 @@ function checkPalindrome(string) {
 
 
 checkPalindrome("eve");
+*/
+
+// 2. Задача с интервью*
+// У вас есть массив с тремя видами скобок, предположим 
+// [ ‘{‘, ‘)’, ‘(‘, ‘)’, ‘)’, ‘}, ‘[‘, ‘]’, ‘)’] . Количество элементов и последовательность может быть разной.
+// Нужно выяснить, все ли скобки являются парными  в правильной последовательности (открывающая и затем закрывающая). Также, скобки могут быть вложенными, но тем не менее, если последовательность соблюдена, то они считаются парными.
+
+// let myArr = [ ')', '{', '(', '(', ')', ')', '}', '[', ']', '(' ]
+// let myArr = [ '{', '(', '(', ')', ')', '}', '[', ']' ] 
+let myArr = [ '{', '(', '(', ')', ')', '}', '[', '[', ')' ] 
+
+let test = myArr.reverse()
+const test1 = myArr.indexOf(')')
+// console.log(test)
+console.log(JSON.stringify(myArr) == JSON.stringify(test))
+console.log(JSON.stringify(myArr))
+console.log(JSON.stringify(test))
