@@ -175,6 +175,14 @@ console.log(arr1.toString() === arr2.toString())           // output: true
 console.log(JSON.stringify(arr1) === JSON.stringify(arr2)) // output: true
 */
 
+
+
+
+// ===========================STRING METHOD==========================
+
+
+
+
 // ----------------string method rap-----------------------
 /*
 const str = 'Stan'             //output: string
@@ -211,9 +219,9 @@ const str3 = str.padEnd(9, '_')
 console.log(str3) //output: Stan_____
 */
 
-const str = 'potato'
-const str1 = 'blueberries'
-const str2 = '06'
+// const str = 'potato'
+// const str1 = 'blueberries'
+// const str2 = '06'
 
 /*
 const str3 = str.padStart(20, ' ')  //output:               potato
@@ -223,9 +231,63 @@ console.log(str3)
 console.log(str4)
 */
 
+/*
 const str3 = str.padEnd(20, ' ')
 const str4 = str1.padEnd(20, " ")
 
 console.log(str3, '2.00') //output: potato               2.00
 console.log(str4, '4.00') //output: blueberries          4.00
+*/
+
+// ----------------indexOf()-----------------------
+
+// console.log(str.indexOf('ta'))
+/*
+const arr = []
+let pos = str.indexOf('o')
+let count = 0
+
+while(pos != -1){
+    arr.push(pos)
+    count++
+    pos = str.indexOf('o', pos + 1)
+}
+console.log(arr, count) //pod index 1, 5 exist "o" . 
+*/
+
+// ----------------startsWith-----------------------
+
+// console.log(str.startsWith('po'))
+
+// ----------------endsWith-----------------------
+
+// console.log(str1.endsWith('ies'))
+
+// ----------------substring-----------------------
+
+// console.log(str1.substring(0, 6)) // 6 symbol is not include .  ouput: bluebe
+// console.log(str1.substring(str1.length - 5))                  //output: rries
+
+
+// ----------------slice-----------------------
+// console.log(str1.slice(3, 5))
+
+// console.log(str1.slice(-2))
+
+// ----------------replace-----------------------
+/*
+const strNum = '(123) 123-4567' 
+
+console.log(str1.replace(/[a-z]/g, ''))
+console.log(strNum.replace(/[0-9]/g, '*')) //ouput: (***) ***-****  
+*/
+// ----------------charCodeAt-----------------------
+
+// console.log(str1.charCodeAt(0))  
+
+
+// ===========================Object==========================
+
+// let obj = {} //created object
+// let objNew = new Object() //created object
 
