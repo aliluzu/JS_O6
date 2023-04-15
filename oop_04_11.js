@@ -75,6 +75,7 @@
 
 
 // // parent class===================================
+/*
 class Person {
     //sets properties
     constructor(name) {
@@ -90,8 +91,9 @@ class Person {
  
  let person = new Person("Peter")
  person.greet()
- person.occupation= 'QA'
+ //person.occupation= 'QA'
  console.log(person.occupation)
+ */
  
  // // console.log("===========================================")
  
@@ -117,3 +119,39 @@ class Person {
  // console.log(student.occupation)
  
  // // //show export and import via sandwich and sandwichClass files
+
+
+
+
+//  ================================EXAMPLE===========
+//inheritance by prototyping
+/*
+let coffeeCup = {
+    name : "",
+    water: "",
+    cupSize: '',
+   
+ }
+ console.log(coffeeCup)
+ 
+ //================================================
+ let coffeeCup2 = {
+    milk: '',
+    __proto__: coffeeCup,
+ }
+ console.log(coffeeCup2)
+ coffeeCup2.name = "Latte"
+ console.log(coffeeCup2.name)
+ 
+ // //================================================
+ let coffeeCup3 = {
+      __proto__: coffeeCup2,
+    "makeCoffee" : function(){
+       console.log("Take a cup, put a coffee and a water in it")
+    }
+ }
+ console.log(coffeeCup3)
+ coffeeCup3.name = "Mocha"
+ console.log(coffeeCup3.name)
+ coffeeCup3.makeCoffee()
+*/
