@@ -33,5 +33,11 @@ console.log(maximum)
 
 //2nd example
 
-let max = array.reduce((acc, el) => acc < el ? acc = el : acc = acc)
+let max = array.reduce((acc, el) => acc < el ? el :  acc)
 console.log(max)
+
+// --------------------- reduce and string ------
+
+let str = ['spring, ', 'summer', 'is', 'equal', 'happines']
+let result = str.reduce((acc, el, index, array) => acc + ' '+ el)
+console.log(result) // output: spring,  summer is equal happines
