@@ -30,3 +30,8 @@ console.log(sum)           //output: 291
 
 let maximum = array.reduce((acc, currVal, index, array) => Math.max(acc, currVal), -Infinity)
 console.log(maximum)
+
+//2nd example
+
+let max = array.reduce((acc, el) => acc < el ? acc = el : acc = acc)
+console.log(max)
