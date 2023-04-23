@@ -1,8 +1,8 @@
 // ================= reduce =============
 
 
-let array = [1, -3, -78, -45, -61, -100, -1, 2]
-let arr = [1, 2, 3, 4]
+// let array = [1, -3, -78, -45, -61, -100, -1, 2]
+// let arr = [1, 2, 3, 4]
 
 // let result = 0
 /*
@@ -27,7 +27,7 @@ console.log(sum)           //output: 291
 
 
 //--------------Max value ---------------
-
+/*
 let maximum = array.reduce((acc, currVal, index, array) => Math.max(acc, currVal), -Infinity)
 console.log(maximum)
 
@@ -35,9 +35,16 @@ console.log(maximum)
 
 let max = array.reduce((acc, el) => acc < el ? el :  acc)
 console.log(max)
-
+*/
 // --------------------- reduce and string ------
 
-let str = ['spring, ', 'summer', 'is', 'equal', 'happines']
-let result = str.reduce((acc, el, index, array) => acc + ' '+ el)
-console.log(result) // output: spring,  summer is equal happines
+// let str = ['spring, ', 'summer', 'is', 'equal', 'happines']
+// let result = str.reduce((acc, el, index, array) => acc + ' '+ el)
+// console.log(result) // output: spring,  summer is equal happines
+
+// ------------------------------------------------
+
+let array = [[1, 3], [1, 2], [3, 2]]
+
+let result = array.reduce((acc, el, index, array) => acc.concat(el), [])
+console.log(result)    //otput: [ 1, 3, 1, 2, 3, 2 ]
