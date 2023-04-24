@@ -363,7 +363,7 @@ console.log(obj);
 // }
 
 
-// //count salaries
+//count salaries
 // let salaries = {
 //   John: 100,
 //   Ann: 160,
@@ -375,7 +375,7 @@ console.log(obj);
 //    sum += salaries[key];
 // }
 
-//  console.log(sum); // 390
+ console.log(sum); // 390
 
 
 // let obj = {

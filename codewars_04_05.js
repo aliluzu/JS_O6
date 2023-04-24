@@ -55,8 +55,9 @@ let newObject = {}
 
 for(let i = 0; i < str.length; i++){
     newObject[i + 1] =str[i] 
+    // console.log(str[i])
 }
-delete newObject[25]
+// delete newObject[25]
 console.log(newObject)
 
 console.log(Object.keys(newObject))    //ouput: all key ['1',  '2',  '3',  '4',  '5', ....]
